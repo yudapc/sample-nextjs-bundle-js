@@ -1,16 +1,8 @@
 import React from "react";
-import styles from "../styles/Menu.module.css";
+import { MegaMenu } from "@components/megaMenu";
+import { dataNavigation } from "@data/navigation";
 
 const Menu: React.FC = () => {
-  return (
-    <div className={styles.dropdown}>
-      <button className={styles.dropbtn}>Dropdown</button>
-      <div className={styles.dropdownContent}>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-  );
+  return <MegaMenu menuSelected="" dataNavigation={dataNavigation} />;
 };
 export default Menu;

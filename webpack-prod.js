@@ -43,6 +43,10 @@ module.exports = merge(common, {
   resolve: {
     alias: {
       '@containers': path.resolve(__dirname, './containers'),
+      '@components': path.resolve(__dirname, './components'),
+      '@pages': path.resolve(__dirname, './pages'),
+      '@utils': path.resolve(__dirname, './utils'),
+      '@data': path.resolve(__dirname, './data'),
     },
     modules: [].concat('src', ['node_modules']),
     extensions: ['.tsx', '.ts', '.js', '.scss', '.css', '.sass'],
