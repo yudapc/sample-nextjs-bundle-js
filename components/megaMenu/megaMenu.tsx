@@ -29,7 +29,7 @@ export const MegaMenu: React.FC<IProps> = ({
   const [showProductsMenu, setShowProductsMenu] = useState<boolean>(false);
   const [showProductsMenuMobile, setShowProductsMenuMobile] =
     useState<boolean>(false);
-  const isMobile = true; //useBreakpointValue({ base: true, xl: false });
+  const isMobile = false; //useBreakpointValue({ base: true, xl: false });
 
   return (
     <Box

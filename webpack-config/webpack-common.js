@@ -4,10 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: {
     home: path.join(__dirname, '../containers/home/library.tsx'),
-    // productList: path.join(
-    //   __dirname,
-    //   '../containers/productCatalog/library.tsx',
-    // ),
   },
   module: {
     rules: [
@@ -17,7 +13,12 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: {
+          loader: 'ts-loader',
+          options: {
+            configFile: 'tsconfig.json'
+          },
+        },
         exclude: /node_modules/,
       },
       {
